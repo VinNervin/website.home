@@ -1,0 +1,212 @@
+
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: rgba(0, 90, 170, 0.5);
+} 
+
+body {
+    background: linear-gradient(#17EAD9, #6078EA);
+    background-attachment: fixed;
+    
+}
+
+
+/* - - - - - - Navigasi - - - - - - */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(94, 97, 131, 0.3);
+    border-radius: 0 0 20px 20px;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: rgb(72, 75, 99);
+    text-decoration: none;
+    z-index: 1;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(39, 41, 61, 0.3);
+    color: rgb(239, 224, 224);
+}
+
+/* - - - - - Judul - - - - - - - */
+.judul {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 5rem 0 3.8rem 0;
+}
+
+.judul h1 {
+    border-bottom: 5px solid rgb(31, 87, 207);
+    border-radius: 5px;
+    color: rgb(31, 87, 207);
+    transition-duration: 2s;
+    transition-delay: 0.3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.judul h1:hover {
+    letter-spacing: 1.3rem;
+}
+
+/* - - - - - Background Div - - - - - - - */
+.background{
+    background-color: rgba(94, 97, 131, 0.3);
+    padding: 10px;
+    margin: 10px 1em;
+    min-height: 7rem;
+    max-width: 100%;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+/* - - - - - - Judul Produk - - - - - - */
+h5 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barang {
+    font-size: 1rem;
+}
+
+.barang img {
+    border-radius: 50px;
+    width: 140px;
+    border: 2px solid white;
+}    
+
+.barang::after {
+         content: "";
+         display: block; 
+         clear: both;
+}
+
+/* - - - - - - Produk - - - - - - */
+.barang #water {
+    float: left;
+    margin-right: 10px;
+}
+
+.barang #bag {
+    float: right;
+    margin-left: 10px;
+}
+
+.barang #shirt {
+    float: left;
+    margin-right: 10px;
+    height: 150px;
+}
+
+/*- - - - - Tombol - - - - - - - */
+button {
+    margin: 0 0 20px 3em;
+    color: white;
+    padding: .5em;
+    border-radius: 10px;
+    border: 1px solid  white;
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button:hover {
+    transition: 1s;
+    background-color: rgba(94, 99, 139, 0.6);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+}
+
+/* - - - - - - Toko - - - - - - */
+.container {
+    background-color: skyblue;
+    margin: 30px 10px;
+    display: flex;
+    height: 15vh;
+}
+
+.container img {
+    width: 100px;
+}
+
+.box {
+    background-color: pink;
+    margin: 0 10px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+
+/* - - - - - - Media Query - - - - - - */
+@media screen and (max-width: 767px) {
+    nav ul {
+        width: 90%;
+    }
+
+    .judul {
+        font-size: medium;
+    }
+    
+    .judul h1:hover {
+    letter-spacing: 1rem;
+}
+    
+   .background {
+       margin: 25px 10px 10px 10px;
+   }
+   
+   button {
+       margin: 0 0 13px 1em;
+   }
+}
+
+
+
+ 
