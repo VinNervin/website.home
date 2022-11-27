@@ -182,31 +182,3 @@ button:hover {
 }
 
 
-
-
-/* - - - - - - Media Query - - - - - - */
-@media screen and (max-width: 767px) {
-    nav ul {
-        width: 90%;
-    }
-
-    .judul {
-        font-size: medium;
-    }
-    
-    .judul h1:hover {
-    letter-spacing: 1rem;
-}
-    
-   .background {
-       margin: 25px 10px 10px 10px;
-   }
-   
-   button {
-       margin: 0 0 13px 1em;
-   }
-}
-
-
-
- 
